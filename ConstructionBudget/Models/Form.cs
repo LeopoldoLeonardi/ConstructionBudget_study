@@ -17,5 +17,21 @@ namespace ConstructionBudget.Models
         public string Name { get; set; }
         public string Email { get; set; }
 
+        public Form()
+        {
+        }
+
+        public Form(int id, string projectName, DateTime date, string zipCode, string strAnddress, string city, string country, string name, string email)
+        {
+            Id = id;
+            ProjectName = projectName;
+            Date = date;
+            ZipCode = zipCode;
+            StrAnddress = strAnddress;
+            City = city;
+            Country = country;
+            Name = name;
+            Email = email;
+        }
     }
 }
